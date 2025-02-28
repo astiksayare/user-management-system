@@ -5,7 +5,6 @@ import * as Assets from "../assets";
 import * as Mui from "@mui/material";
 import * as MuiIcon from "@mui/icons-material";
 import * as Router from "react-router-dom";
-import { styled } from '@mui/system';
 import swal from 'sweetalert';
 
 
@@ -42,7 +41,6 @@ const Sidebar = (props: any) => {
     ]
 
 
-    const user = location.state?.user;
 
     const { window } = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -146,10 +144,6 @@ const Sidebar = (props: any) => {
         </div>
     );
 
-    const BoldCell = styled(Mui.TableCell)({
-        fontWeight: 'bold',
-        border: 'none',
-    });
 
 
     //   Profile Drawer

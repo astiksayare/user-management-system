@@ -178,38 +178,6 @@ const Users = () => {
         resetForm();
       }
 
-    // fetch(`https://exchange.blockchainappdevs.com/doctor-ai/admin/subscription/create`, {
-    //   method: 'POST',
-      
-    //   headers: {
-    //     'Authorization': `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJWaGNaSDdQUVRTWDkxTkdENVVRSSIsImZpcnN0TmFtZSI6ImFkbWluIiwibGFzdE5hbWUiOiJBIiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MTczOTM0MTgsImV4cCI6MTcxOTk4NTQxOH0.IxSX9K9EiTAIMcZKW8u4xkRBhGvTZzup2ycnsAlRk2E`,
-    //     'Content-Type': 'application/json',
-    //   },
-    //   body: JSON.stringify(values),
-    // })
-    //   .then((response) => response.json())
-    //   .then((data) => {
-    //     console.log('Success:', data);
-    //   })
-    //   .catch((error) => {
-    //     console.error('Error:', error);
-    //   });
-
-    // ********************************
-
-
-    // axios.put(`https://exchange.blockchainappdevs.com/doctor-ai/admin/subscription/update/1000`, values, {
-    //   headers: {
-    //     'Content-Type': 'application/json',
-    //     'Authorization': `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJWaGNaSDdQUVRTWDkxTkdENVVRSSIsImZpcnN0TmFtZSI6ImFkbWluIiwibGFzdE5hbWUiOiJBIiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MTczOTM0MTgsImV4cCI6MTcxOTk4NTQxOH0.IxSX9K9EiTAIMcZKW8u4xkRBhGvTZzup2ycnsAlRk2E`,
-    //   },
-    // })
-    //   .then((response) => {
-    //     console.log('Success:', response.data);
-    //   })
-    //   .catch((error) => {
-    //     console.error('Error:', error);
-    //   });
 
     setAddData(false);
   };
@@ -299,7 +267,7 @@ const Users = () => {
         </Mui.Box>
         <Mui.Box component={"div"} p={4} sx={{ height: 600, width: "100%" }}>
           {/* <Table/> */}
-          <DataGrid rows={rows} columns={cols} pageSize={10}/>
+          <DataGrid rows={rows} columns={cols} />
         </Mui.Box>
 
         <>
