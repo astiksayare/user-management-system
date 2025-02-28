@@ -1,30 +1,20 @@
-# React + TypeScript + Vite
+# React + TypeScript + Vite + Spring boot + JWT Authetication + Postgres DB
+# User Management System : with all above resources I build this project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Sign in page
+![image](https://github.com/user-attachments/assets/fd2557f9-ddc3-4fb3-9c18-798a931bceef)
 
-Currently, two official plugins are available:
+Note: Without authentication we can't login, So I make use of token which is generated from the backend.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Add user page
+![image](https://github.com/user-attachments/assets/6bdcc35f-6e0f-486a-8616-83200a8d1715)
 
-## Expanding the ESLint configuration
+# User list page 
+![image](https://github.com/user-attachments/assets/fd374199-4b22-4099-a8ee-24e4ec33dfc0)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+all data fetch from the backend with the help of an api's created by the spring boot application.
 
-- Configure the top-level `parserOptions` property like this:
+# Add User button with client side validation
+![image](https://github.com/user-attachments/assets/0e970ea8-a54e-4d8f-a642-0a3b0f439357)
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+# Thanks
