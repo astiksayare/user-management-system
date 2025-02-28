@@ -10,6 +10,7 @@ import * as Components from "../components";
 import { TransitionProps } from '@mui/material/transitions';
 import * as Formik from "formik";
 import * as Yup from "yup";
+import swal from "sweetalert";
 
 const addUsersValidation = Yup.object().shape({
   userName: Yup.string().required("User Name is required")
@@ -167,7 +168,6 @@ const Users = () => {
         } 
 
       } catch (error) {
-        console.error("Signup error:", error);
         swal({
           timer: 2000,
           title: "Something went wrong!",
